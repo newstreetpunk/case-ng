@@ -1,0 +1,191 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.architecture__block-structure--items
+		justify-content: center
+	.architecture__block-structure--item
+		width: 50%
+		justify-content: center
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 0
+	.architecture__block-hierarchy--branchs div span
+		padding: 15px 30px
+	.design-img
+		margin-left: 0
+		width: 50%
+	.functional__row--text
+		width: 60%
+
+// ≥992px
++media-breakpoint-down(md)
+	.architecture__block-hierarchy--item
+		flex-direction: column
+	.architecture__block-hierarchy-wrap
+		width: auto
+	.architecture__block-hierarchy--branchs
+		margin-left: 0
+	.architecture__block-hierarchy--branchs div
+		text-align: center
+		&:last-child
+			margin-bottom: 70px
+	.architecture__block-hierarchy--branchs div span:after
+		display: none
+	.architecture__block-hierarchy--branchs div span
+		z-index: 1
+	.architecture__block-hierarchy--branchs div span:before
+		content: ''
+		display: block
+		width: 1px
+		height: 60%
+		border-right: 2px dashed $accent
+		position: absolute
+		left: 50%
+		top: -55%
+		z-index: -1
+	.architecture
+		padding-bottom: 0
+	.design__one-block--item
+		height: 225px
+	.design__one-block--item:nth-child(2)
+		top: 30px
+	.functional__row
+		flex-direction: column
+		margin-bottom: 0
+		img
+			margin-bottom: 30px !important
+	.functional__row--text
+		width: 100%
+	.my-btn
+		margin: 30px 0
+	.mra
+		margin-right: auto
+		width: 50% !important
+	.functional .functional-tablet
+		width: 50%
+		bottom: -6vw
+// ≥768px
++media-breakpoint-down(sm)
+	.text__wrap
+		flex-direction: column
+	.text__col
+		width: 100%
+		&:first-child
+			margin-bottom: 30px
+	.architecture__block-structure--item
+		width: 100%
+		justify-content: flex-start
+	.design__text
+		margin-top: 30px
+		width: 100%
+	.design-row
+		flex-direction: column-reverse
+		&.no-reverse
+			flex-direction: column
+	.design-img, .design__text--two
+		width: 100%
+	.design__composition
+		width: 100%
+	.design__composition span:nth-child(2)
+		right: 25%
+		top: 30px
+	.design__one-block
+		margin-bottom: 30px
+	.design__one-block--item
+		top: auto !important
+		width: 100%
+		left: auto !important
+		margin: 0 auto 35px
+		height: 150px
+		background-position: top right
+	.design__one-block--item:nth-child(2)
+		margin-top: 50px
+	.plashka
+		margin: 0 auto
+		text-align: center
+		display: block
+		width: 200px
+	.design__one-block--item .plashka-accent, .design__one-block.design__one-block--white .design__one-block--item .plashka-accent
+		font-size: 16px
+		left: 50%
+		transform: translateX(-50%)
+		text-align: center
+		top: -20px
+		position: relative
+		display: inline-block
+	.design-descr
+		width: 100%
+		margin-top: 45px
+		text-align: left
+	.mra
+		width: 100% !important
+	.functional .functional-tablet
+		display: none
+	.functional
+		padding-bottom: 6.5vmax
+	.total__row
+		flex-direction: column-reverse
+	.total__row .sa-logo
+		flex: 1
+// ≥576px
++media-breakpoint-down(xs)
+	section h2
+		font-size: 25px
+	.architecture-subtitle
+		font-size: 20px
+	.header
+		background-image: url(../img/header-bg__mob.jpg) !important
+	.architecture__block-hierarchy--title
+		display: block
+		text-align: center
+		padding: 15px 20px
+		margin-bottom: -10px
+		line-height: 1.2
+	.architecture__block-hierarchy--title span
+		left: 50%
+		margin-left: -25px
+		top: -40px
+	.architecture__block-structure
+		margin-bottom: 6.5vmax
+	.architecture__block-hierarchy
+		.architecture-subtitle
+			margin-bottom: 60px
+	.architecture__block-hierarchy--branchs div:last-child
+		margin-bottom: 80px
+	.architecture__block-hierarchy--branchs div span
+		padding: 15px 25px
+	// .design__composition .mob-bg
+	// 	display: block
+	// 	width: 55%
+	// 	right: -15px
+	.design__text--two
+		margin-bottom: 30px
+	.design__composition span:nth-child(2)
+		right: 5%
+	.design__composition span:nth-child(3)
+		top: 130px !important
+	.my-btn
+		font-size: 15px
+		margin: 20px 0
+	.footer-wrap p
+		padding: 0 15px
+		margin-top: -70px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
