@@ -1,4 +1,4 @@
-jQuery(function($) {
+$(function() {
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > $(window).height()) {
