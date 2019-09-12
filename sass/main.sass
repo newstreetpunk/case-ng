@@ -61,6 +61,7 @@ li
 	background-repeat: no-repeat
 section
 	padding: 6.5vmax 0
+	position: relative
 	h2
 		text-transform: uppercase
 		font-size: 30px
@@ -195,6 +196,12 @@ section
 							&:after
 								transform: rotate(25deg)
 .design
+	img.mob-bg
+		position: absolute
+		right: 0
+		top: 110px
+		z-index: 2
+		display: none
 	&-row
 		display: flex
 		align-items: center
@@ -311,6 +318,8 @@ section
 		bottom: -10vw
 		right: 0
 		width: 55%
+.functional-tablet__mob
+	display: none
 
 
 .my-btn
